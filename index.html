@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra roupas de ballet que unem conforto, elegância e liberdade de movimento.">
+    <title>Étoile Ballet | Elegância em Movimento</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        ballet: '#d9a7b5',
+                        dark: '#25232a',
+                        neon: '#b5f56b'
+                    },
+                    fontFamily: {
+                        elegant: ['Georgia', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #faf8f7;
+        }
+
+        .hero-bg {
+            background: linear-gradient(120deg, #27232b 0%, #493943 100%);
+        }
+
+        .product-card {
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 35px rgba(0,0,0,.12);
+        }
+
+        .cta {
+            transition: all .3s ease;
+        }
+
+        .cta:hover {
+            transform: scale(1.04);
+            background: #a2e85a;
+        }
+    </style>
+</head>
+
+<body class="text-gray-800">
+
+    <!-- HEADER -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-elegant font-bold tracking-widest text-dark">
+                ÉTOILE<span class="text-ballet">.</span>
+            </a>
+
+            <nav class="hidden md:flex gap-8 text-sm font-medium">
+                <a href="#colecao" class="hover:text-pink-500">Coleção</a>
+                <a href="#beneficios" class="hover:text-pink-500">Benefícios</a>
+                <a href="#depoimentos" class="hover:text-pink-500">Depoimentos</a>
+                <a href="#oferta" class="hover:text-pink-500">Ofertas</a>
+            </nav>
+
+            <a href="#colecao"
+               class="bg-dark text-white px-5 py-2 rounded-full text-sm hover:bg-pink-700 transition">
+                Comprar agora
+            </a>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero-bg text-white">
+        <div class="max-w-7xl mx-auto px-6 py-20 md:py-28 grid md:grid-cols-2 gap-12 items-center">
+
+            <div>
+                <span class="text-neon uppercase tracking-[4px] text-xs font-bold">
+                    Coleção exclusiva 2026
+                </span>
+
+                <h1 class="font-elegant text-5xl md:text-7xl leading-tight mt-6">
+                    Sua paixão pela dança merece <span class="text-ballet italic">brilhar.</span>
+                </h1>
+
+                <p class="text-gray-300 text-lg mt-6 leading-relaxed max-w-lg">
+                    Descubra roupas de ballet que combinam delicadeza,
+                    conforto e elegância. Sinta-se confiante em cada movimento.
+                </p>
+
+                <div class="flex flex-wrap gap-4 mt-8 text-sm">
+                    <span>✓ Conforto excepcional</span>
+                    <span>✓ Tecidos de qualidade</span>
+                    <span>✓ Liberdade de movimento</span>
+                </div>
+
+                <a href="#colecao"
+                   class="cta inline-block bg-neon text-dark font-bold px-9 py-4 rounded-full mt-10 shadow-lg">
+                    CONHEÇA A COLEÇÃO →
+                </a>
+
+                <p class="text-gray-400 text-xs mt-5">
+                    Elegância e conforto em cada detalhe.
+                </p>
+            </div>
+
+            <div class="relative">
+                <img
+                    src="https://images.unsplash.com/photo-1518834107812-67b0b7c58434?w=900"
+                    alt="Bailarina em movimento"
+                    class="rounded-2xl shadow-2xl w-full h-[480px] object-cover"
+                >
+                <div class="absolute bottom-5 left-5 bg-white/90 text-dark p-5 rounded-xl">
+                    <p class="font-elegant text-xl">Dance com liberdade.</p>
+                    <p class="text-xs text-gray-500 mt-1">Vista sua melhor versão.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- BENEFÍCIOS -->
+    <section id="beneficios" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-14">
+                <span class="text-pink-500 uppercase tracking-widest text-xs font-bold">
+                    Nossa essência
+                </span>
+                <h2 class="font-elegant text-4xl md:text-5xl mt-3">
+                    Mais que uma roupa, uma experiência.
+                </h2>
+                <p class="text-gray-500 mt-4">
+                    Cada detalhe pensado para acompanhar sua paixão pelo ballet.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="text-4xl mb-4">🩰</div>
+                    <h3 class="font-bold text-lg">Conforto absoluto</h3>
+                    <p class="text-gray-500 text-sm mt-3">
+                        Modelagens pensadas para acompanhar seus movimentos.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="text-4xl mb-4">✨</div>
+                    <h3 class="font-bold text-lg">Design elegante</h3>
+                    <p class="text-gray-500 text-sm mt-3">
+                        Peças delicadas que valorizam a beleza da dança.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="text-4xl mb-4">🌸</div>
+                    <h3 class="font-bold text-lg">Tecidos especiais</h3>
+                    <p class="text-gray-500 text-sm mt-3">
+                        Materiais selecionados para proporcionar conforto.
+                    </p>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm text-center">
+                    <div class="text-4xl mb-4">💗</div>
+                    <h3 class="font-bold text-lg">Liberdade total</h3>
+                    <p class="text-gray-500 text-sm mt-3">
+                        Flexibilidade para ensaiar e dançar com confiança.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- COLEÇÃO -->
+    <section id="colecao" class="bg-white py-20">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-14">
+                <span class="text-pink-500 uppercase tracking-widest text-xs font-bold">
+                    Escolha seu estilo
+                </span>
+                <h2 class="font-elegant text-4xl md:text-5xl mt-3">
+                    Nossa coleção
+                </h2>
+                <p class="text-gray-500 mt-3">
+                    Peças especiais para transformar cada aula em um momento único.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- PRODUTO 1 -->
+                <article class="product-card rounded-2xl overflow-hidden bg-gray-50">
+                    <img
+                        src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=700"
+                        alt="Roupa de ballet delicada"
+                        class="w-full h-80 object-cover"
+                    >
+                    <div class="p-6">
+                        <span class="text-xs text-pink-500 font-bold uppercase">
+                            Mais vendido
+                        </span>
+                        <h3 class="font-elegant text-2xl mt-2">Collant Clássico</h3>
+                        <p class="text-gray-500 text-sm mt-2">
+                            Elegância e conforto para suas aulas.
+                        </p>
+                        <div class="flex justify-between items-center mt-5">
+                            <span class="text-2xl font-bold">R$ 89,90</span>
+                            <button onclick="comprar('Collant Clássico')"
+                                class="bg-dark text-white px-5 py-3 rounded-full text-sm hover:bg-pink-600">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 2 -->
+                <article class="product-card rounded-2xl overflow-hidden bg-gray-50">
+                    <img
+                        src="https://images.unsplash.com/photo-1506629905607-d9f8c1b2e0e7?w=700"
+                        alt="Saia de ballet"
+                        class="w-full h-80 object-cover"
+                    >
+                    <div class="p-6">
+                        <span class="text-xs text-pink-500 font-bold uppercase">
+                            Delicadeza
+                        </span>
+                        <h3 class="font-elegant text-2xl mt-2">Saia de Ballet</h3>
+                        <p class="text-gray-500 text-sm mt-2">
+                            Leveza e movimento para completar seu visual.
+                        </p>
+                        <div class="flex justify-between items-center mt-5">
+                            <span class="text-2xl font-bold">R$ 59,90</span>
+                            <button onclick="comprar('Saia de Ballet')"
+                                class="bg-dark text-white px-5 py-3 rounded-full text-sm hover:bg-pink-600">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- PRODUTO 3 -->
+                <article class="product-card rounded-2xl overflow-hidden bg-gray-50">
+                    <img
+                        src="https://images.unsplash.com/photo-1518611012118-696072aa579a?w=700"
+                        alt="Conjunto para ballet"
+                        class="w-full h-80 object-cover"
+                    >
+                    <div class="p-6">
+                        <span class="text-xs text-pink-500 font-bold uppercase">
+                            Exclusividade
+                        </span>
+                        <h3 class="font-elegant text-2xl mt-2">Conjunto Ballet</h3>
+                        <p class="text-gray-500 text-sm mt-2">
+                            Um look completo para sua rotina de dança.
+                        </p>
+                        <div class="flex justify-between items-center mt-5">
+                            <span class="text-2xl font-bold">R$ 139,90</span>
+                            <button onclick="comprar('Conjunto Ballet')"
+                                class="bg-dark text-white px-5 py-3 rounded-full text-sm hover:bg-pink-600">
+                                Comprar
+                            </button>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CARACTERÍSTICAS TÉCNICAS -->
+    <section class="bg-dark text-white py-20">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="text-center mb-14">
+                <span class="text-neon uppercase tracking-widest text-xs font-bold">
+                    Qualidade em cada detalhe
+                </span>
+                <h2 class="font-elegant text-4xl md:text-5xl mt-3">
+                    Desenvolvido para você.
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-10">
+
+                <div class="border border-gray-600 p-8 rounded-2xl">
+                    <div class="text-neon text-3xl mb-5">⚡</div>
+                    <h3 class="text-xl font-bold">Praticidade no dia a dia</h3>
+                    <p class="text-gray-400 mt-3 text-sm leading-relaxed">
+                        Peças fáceis de combinar, cuidar e transportar,
+                        perfeitas para sua rotina de aulas e apresentações.
+                    </p>
+                </div>
+
+                <div class="border border-gray-600 p-8 rounded-2xl">
+                    <div class="text-neon text-3xl mb-5">🧵</div>
+                    <h3 class="text-xl font-bold">Materiais selecionados</h3>
+                    <p class="text-gray-400 mt-3 text-sm leading-relaxed">
+                        Tecidos confortáveis, acabamento cuidadoso
+                        e modelagens que acompanham seus movimentos.
+                    </p>
+                </div>
+
+                <div class="border border-gray-600 p-8 rounded-2xl">
+                    <div class="text-neon text-3xl mb-5">💎</div>
+                    <h3 class="text-xl font-bold">Design compacto e versátil</h3>
+                    <p class="text-gray-400 mt-3 text-sm leading-relaxed">
+                        Modelos práticos e versáteis que combinam
+                        elegância, funcionalidade e liberdade.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS -->
+    <section id="depoimentos" class="py-20">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="text-center mb-14">
+                <span class="text-pink-500 uppercase tracking-widest text-xs font-bold">
+                    Quem ama, recomenda
+                </span>
+                <h2 class="font-elegant text-4xl md:text-5xl mt-3">
+                    Experiências especiais.
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="text-yellow-400 text-xl">★★★★★</div>
+                    <p class="text-gray-600 mt-5 italic">
+                        "O collant é lindo! O tecido é muito confortável
+                        e consigo fazer todos os movimentos tranquilamente."
+                    </p>
+                    <div class="mt-6">
+                        <p class="font-bold">Mariana S.</p>
+                        <p class="text-gray-400 text-xs">Cliente ilustrativa</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="text-yellow-400 text-xl">★★★★★</div>
+                    <p class="text-gray-600 mt-5 italic">
+                        "Amei a delicadeza das peças. São exatamente
+                        o que eu procurava para minhas aulas de ballet."
+                    </p>
+                    <div class="mt-6">
+                        <p class="font-bold">Ana Clara R.</p>
+                        <p class="text-gray-400 text-xs">Cliente ilustrativa</p>
+                    </div>
+                </div>
+
+                <div class="bg-white p-8 rounded-2xl shadow-sm">
+                    <div class="text-yellow-400 text-xl">★★★★★</div>
+                    <p class="text-gray-600 mt-5 italic">
+                        "Peças maravilhosas! Gostei muito do acabamento
+                        e da elegância de cada detalhe."
+                    </p>
+                    <div class="mt-6">
+                        <p class="font-bold">Beatriz M.</p>
+                        <p class="text-gray-400 text-xs">Cliente ilustrativa</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTA ESPECIAL -->
+    <section id="oferta" class="bg-dark py-20 text-white">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+
+            <span class="bg-neon text-dark px-5 py-2 rounded-full text-xs font-bold uppercase">
+                Oferta especial
+            </span>
+
+            <h2 class="font-elegant text-4xl md:text-6xl mt-8">
+                Seu próximo look de ballet está aqui!
+            </h2>
+
+            <p class="text-gray-300 mt-5 text-lg">
+                Aproveite uma condição especial na sua próxima compra.
+            </p>
+
+            <div class="my-10">
+                <p class="text-sm uppercase tracking-widest text-gray-400 mb-5">
+                    Tempo restante da oferta
+                </p>
+
+                <div class="flex justify-center gap-4" id="countdown">
+
+                    <div class="bg-white/10 rounded-xl p-5 min-w-20">
+                        <span id="hours" class="text-4xl font-bold text-neon">23</span>
+                        <p class="text-xs text-gray-400 mt-2">Horas</p>
+                    </div>
+
+                    <div class="bg-white/10 rounded-xl p-5 min-w-20">
+                        <span id="minutes" class="text-4xl font-bold text-neon">59</span>
+                        <p class="text-xs text-gray-400 mt-2">Minutos</p>
+                    </div>
+
+                    <div class="bg-white/10 rounded-xl p-5 min-w-20">
+                        <span id="seconds" class="text-4xl font-bold text-neon">59</span>
+                        <p class="text-xs text-gray-400 mt-2">Segundos</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bg-white text-dark max-w-md mx-auto rounded-2xl p-8">
+                <p class="text-gray-500 text-sm">Condição promocional ilustrativa</p>
+
+                <h3 class="font-elegant text-3xl mt-3">
+                    15% OFF
+                </h3>
+
+                <p class="text-gray-500 mt-2 text-sm">
+                    Em compras selecionadas.
+                </p>
+
+                <p class="font-bold text-pink-600 mt-4">
+                    CUPOM: BALLET15
+                </p>
+
+                <button onclick="comprar('Oferta especial Ballet')"
+                    class="cta w-full bg-neon text-dark font-bold py-4 rounded-full mt-6">
+                    QUERO APROVEITAR →
+                </button>
+            </div>
+
+            <p class="text-gray-500 text-xs mt-6">
+                Oferta demonstrativa. Configure as condições comerciais reais antes de publicar.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- CTA FINAL -->
+    <section class="py-20 bg-pink-50 text-center">
+        <div class="max-w-3xl mx-auto px-6">
+            <h2 class="font-elegant text-4xl md:text-5xl">
+                Cada passo conta uma história.
+            </h2>
+
+            <p class="text-gray-600 mt-5">
+                Encontre o look perfeito e transforme sua paixão pela dança
+                em ainda mais momentos especiais.
+            </p>
+
+            <a href="#colecao"
+               class="cta inline-block bg-dark text-white font-bold px-10 py-4 rounded-full mt-8">
+                ESCOLHER MINHA ROUPA →
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-dark text-white py-12">
+        <div class="max-w-7xl mx-auto px-6">
+
+            <div class="grid md:grid-cols-3 gap-10">
+
+                <div>
+                    <h2 class="font-elegant text-3xl tracking-widest">
+                        ÉTOILE<span class="text-ballet">.</span>
+                    </h2>
+                    <p class="text-gray-400 text-sm mt-4">
+                        Elegância, conforto e paixão em cada movimento.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-4">Navegação</h3>
+                    <ul class="text-gray-400 text-sm space-y-3">
+                        <li><a href="#colecao" class="hover:text-white">Coleção</a></li>
+                        <li><a href="#beneficios" class="hover:text-white">Benefícios</a></li>
+                        <li><a href="#depoimentos" class="hover:text-white">Depoimentos</a></li>
+                        <li><a href="#oferta" class="hover:text-white">Ofertas</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="font-bold mb-4">Atendimento</h3>
+                    <p class="text-gray-400 text-sm">
+                        Entre em contato para tirar suas dúvidas sobre
+                        produtos, tamanhos e pedidos.
+                    </p>
+                    <a href="mailto:contato@etoileballet.com"
+                       class="text-neon text-sm mt-3 inline-block">
+                        contato@etoileballet.com
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center">
+                <p class="text-gray-500 text-xs">
+                    © 2026 Étoile Ballet. Todos os direitos reservados.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        // REDIRECIONAMENTO SIMULADO PARA CHECKOUT
+        function comprar(produto) {
+            const confirmar = confirm(
+                "Você selecionou: " + produto +
+                "\n\nDeseja continuar para o checkout?"
+            );
+
+            if (confirmar) {
+                alert(
+                    "Compra simulada com sucesso!\n\n" +
+                    "Configure seu link de checkout para receber pedidos reais."
+                );
+
+                // Substitua pela URL real do seu checkout:
+                // window.location.href = "https://seusite.com/checkout";
+            }
+        }
+
+        // CONTADOR REGRESSIVO
+        // Temporizador demonstrativo de 24 horas.
+        let tempoRestante = 24 * 60 * 60;
+
+        function atualizarContador() {
+
+            const horas = Math.floor(tempoRestante / 3600);
+            const minutos = Math.floor((tempoRestante % 3600) / 60);
+            const segundos = tempoRestante % 60;
+
+            document.getElementById("hours").textContent =
+                String(horas).padStart(2, "0");
+
+            document.getElementById("minutes").textContent =
+                String(minutos).padStart(2, "0");
+
+            document.getElementById("seconds").textContent =
+                String(segundos).padStart(2, "0");
+
+            if (tempoRestante > 0) {
+                tempoRestante--;
+            } else {
+                document.getElementById("countdown").innerHTML =
+                    '<p class="text-neon text-xl font-bold">Oferta encerrada!</p>';
+                clearInterval(intervalo);
+            }
+        }
+
+        atualizarContador();
+
+        const intervalo = setInterval(atualizarContador, 1000);
+
+    </script>
+
+</body>
+</html>
